@@ -1,2 +1,2 @@
-export const hostUrl = 'localhost:5000'
-export const apiUrl = 'http://localhost:5000'
+export const hostUrl = 'localhost:3000'
+export const apiUrl = 'http://localhost:3000'

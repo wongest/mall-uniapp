@@ -4,20 +4,49 @@
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/index",
 			"style": {
-				"navigationBarTitleText": "路路查"
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "商城demo", //顶部名称
+				"navigationBarBackgroundColor": "#F95E5D", //顶部背景色
+				"navigationBarTextStyle": "white" //文字颜色，目前只支持white和black这两种颜色（小程序）
+			}
+		},
+		{
+			"path": "pages/me/index",
+			"style": {
+				"navigationBarTitleText": "我的"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "哔哩哔哩Demo",
+		"navigationBarTitleText": "商城demo",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8",
-		"navigationStyle": "custom"
+		"navigationStyle": "default" // 默认标题
 	},
-	"condition" : { //模式配置，仅开发期间生效
+	"tabBar": {
+		"color": "#cdcdcd",
+		"selectedColor": "#39cffc",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/me/index",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
 		"current": 0, //当前激活的模式(list 的索引项)
 		"list": [
 			{

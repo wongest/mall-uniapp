@@ -1,5 +1,5 @@
 {
-    "name" : "uniapp-demo",
+    "name" : "mall",
     "appid" : "",
     "description" : "",
     "versionName" : "1.0.0",
@@ -57,7 +57,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wx874fa51ccca3066d",
         "setting" : {
             "urlCheck" : false
         },
@@ -72,19 +72,19 @@
     "mp-toutiao" : {
         "usingComponents" : true
     },
-    "uniStatistics": {  
-        "enable": false
+    "uniStatistics" : {
+        "enable" : false
     },
     "h5" : {
         "devServer" : {
-             "port" : 8001, //端口号
-              "disableHostCheck" : true,
-              "proxy" : {
-                  "/api" : {
-                      "target" : "http://localhost:5000/api", //目标接口域名
-                       "changeOrigin" : true,  //是否跨域
-                       "secure" : false  // 设置支持https协议的代理
-                 }
+            "port" : 8001, //端口号
+            "disableHostCheck" : true,
+            "proxy" : {
+                "/api" : {
+                    "target" : "http://localhost:5000/api", //目标接口域名
+                    "changeOrigin" : true, //是否跨域
+                    "secure" : false // 设置支持https协议的代理
+                }
             }
         }
     }

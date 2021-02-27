@@ -3,6 +3,8 @@ import Vuex from 'vuex'
 import { post } from '../utils/request'
 import { apiUrl } from '../utils/keys'
 
+import home from '../pages/home/module'
+
 //挂载Vuex
 Vue.use(Vuex)
 
@@ -14,8 +16,7 @@ const store = new Vuex.Store({
   },
 
   mutations:{
-    //es6语法，等同edit:funcion(){...}
-    setName(state, payload = ''){
+    setName(state, payload = {}){
       console.log('setName', payload)
         state.name = payload
     }
@@ -43,6 +44,10 @@ const store = new Vuex.Store({
       const { code, data = {} } = await post(`${apiUrl}/api/users/test`, payload)
       console.log(code, data)
     }
+  },
+
+  modules: {
+    home,
   }
 })
 

@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './App'
-import uView from "uview-ui";
-import store from './store'
 
-Vue.use(uView);
+import store from './store'
+import waterfall from 'vue-waterfall2'
+Vue.use(waterfall)
 
 Vue.config.productionTip = false
 

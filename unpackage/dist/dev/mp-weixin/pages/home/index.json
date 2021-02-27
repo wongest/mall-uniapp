@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "商城demo",
+  "navigationBarBackgroundColor": "#F95E5D",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "waterfalls-flow": "/components/maramlee-waterfalls-flow/maramlee-waterfalls-flow"
+  }
+}

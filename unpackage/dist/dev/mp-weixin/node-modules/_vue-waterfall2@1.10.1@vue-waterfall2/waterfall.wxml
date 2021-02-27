@@ -1,0 +1,1 @@
+<view class="{{['vue-waterfall _div vue-ref',isTransition&&'is-transition']}}" style="{{'height:'+(height)+';'}}" id="vueWaterfall" data-ref="vueWaterfall"><view class="slot-box _div"><slot></slot></view></view>
